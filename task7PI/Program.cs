@@ -1,30 +1,32 @@
 ﻿using System;
+using task7PI;
 
-class Program
+namespace Task7PI
 {
-    static void Main()
+    class Program
     {
-        Console.WriteLine("Введите значение для a:");
-        int a = int.Parse(Console.ReadLine());
-
-        Console.WriteLine("Введите значение для b:");
-        int b = int.Parse(Console.ReadLine());
-
-        Console.WriteLine("Введите значение для c:");
-        int c = int.Parse(Console.ReadLine());
-
-        if (IsPythagoreanTriple(a, b, c))
+        static void Main()
         {
-            Console.WriteLine($"Тройка ({a}, {b}, {c}) является тройкой Пифагора.");
-        }
-        else
-        {
-            Console.WriteLine($"Тройка ({a}, {b}, {c}) не является тройкой Пифагора.");
-        }
-    }
+            Pythagorean pythagorean = new Pythagorean();
+            Console.WriteLine("Введите значение для a:");
+            int a = int.Parse(Console.ReadLine());
 
-    public static bool IsPythagoreanTriple(int a, int b, int c)
-    {
-        return a * a + b * b == c * c;
+            Console.WriteLine("Введите значение для b:");
+            int b = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Введите значение для c:");
+            int c = int.Parse(Console.ReadLine());
+
+            if (pythagorean.IsPythagoreanTriple(a, b, c))
+            {
+                Console.WriteLine($"Тройка ({a}, {b}, {c}) является тройкой Пифагора.");
+            }
+            else
+            {
+                Console.WriteLine($"Тройка ({a}, {b}, {c}) не является тройкой Пифагора.");
+            }
+        }
+
+       
     }
 }
