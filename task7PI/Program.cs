@@ -10,7 +10,7 @@ class Program
         Console.WriteLine("Введите значение для b:");
         int b = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Введите значение для c:")
+        Console.WriteLine("Введите значение для c:");
         int c = int.Parse(Console.ReadLine());
 
         if (IsPythagoreanTriple(a, b, c))
@@ -23,7 +23,7 @@ class Program
         }
     }
 
-    static bool IsPythagoreanTriple(int a, int b, int c)
+    public static bool IsPythagoreanTriple(int a, int b, int c)
     {
         return a * a + b * b == c * c;
     }
