@@ -11,7 +11,7 @@ namespace Task7PI
             Console.WriteLine("Введите значение для a:");
             int a = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Введите значение для b:");
+            Console.WriteLine("Введите значение для b:")
             int b = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Введите значение для c:");
